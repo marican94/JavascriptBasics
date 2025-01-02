@@ -6,4 +6,4 @@ testAlert("Test 1 2 3")
 
 testAlert(4 + 5)
 
-console.log("Hello World")
+console.log("Hello 2025")
