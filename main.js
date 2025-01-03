@@ -1,16 +1,4 @@
-/*
-function testAlert(message) {
-    alert(message)
-}
-
-testAlert("Test 1 2 3")
-
-testAlert(4 + 5)
-
-console.log("Hello 2025")
-
-document.getElementById("greeting").innerHTML = "Hello World"
-*/
+// Menu Section
 
 document.querySelector("#open-nav-menu").addEventListener("click", function() {
     document.querySelector("header nav .wrapper").classList.add("nav-open");    
@@ -20,10 +8,13 @@ document.querySelector("#close-nav-menu").addEventListener("click", function() {
     document.querySelector("header nav .wrapper").classList.remove("nav-open");   
 })
 
-const customer = "John";
-let balance = 1000;
-console.log("Hello, "+ customer + " your balance is: " + balance);
+// Greeting Section
 
-balance = balance + 200;
+const greetingText = "Good afternoon!";
+const weatherCondition = "sunny";
+const userLocation = "Istanbul";
+let temperature = 22.8673;
+let weatherText = `The weather is ${weatherCondition} in ${userLocation} and it's ${temperature.toFixed(1)}°C outside.`;
 
-console.log("Hello, "+ customer + " your new balance is: " + balance);
+document.querySelector("#greeting").innerHTML = greetingText;
+document.querySelector("p#weather").innerHTML = weatherText;
